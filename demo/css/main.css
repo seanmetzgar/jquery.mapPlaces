@@ -98,7 +98,6 @@ textarea {
    ========================================================================== */
 .mapContainer {
     width: 720px;
-    height: 360px;
     position: relative;
     margin: 20px auto;
 }
