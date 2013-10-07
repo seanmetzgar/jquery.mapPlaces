@@ -1,7 +1,72 @@
 /* jQuery Map Places - CSS */
-.mapPlacesSearch {
-	width:;
+.mapPlacesFieldContainer {
+	width: 25%;
+	float: left;
+	margin: 0 0 5px;
 }
+	.mapPlacesFieldContainer:nth-child(3n+1) {
+		clear: left;
+	}
+	.mapPlacesFieldContainer label {
+		margin-left: 4px;
+	}
 .mapPlacesFoundation {
     display: block;
 }
+
+/** InfoWindow **/
+.mapPlacesInfoWindow {
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	font-size: 12px;
+}
+	.mapPlacesInfoWindow .mpName {
+		margin: 0 10px 0 0;
+		padding: 0;
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+	.mapPlacesInfoWindow .mpVicinity {
+		margin: 0;
+		padding: 0;
+		font-size: 1em;
+		font-weight: normal;
+	}
+/** List of Locations **/
+.mapPlacesList {
+	display: block;
+	margin: 8px 0 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 12px;
+	overflow: auto;
+	height: 300px;
+}
+	.mapPlacesList li {
+		display: block;
+		width: auto;
+		padding: 5px;
+		overflow: hidden;
+		border: 1px solid #ddd;
+		border-bottom:0;
+	}
+		.mapPlacesList li:last-child {
+			border-bottom: 1px solid #ddd;
+		}
+		.mapPlacesList .mpName {
+			margin: 0 10px 0 0;
+			padding: 0;
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		.mapPlacesList .mpVicinity {
+			margin: 0 10px 0 0;
+			padding: 0;
+			font-size: 1em;
+			font-weight: normal;
+		}
+		.mapPlacesList .mpIcon {
+			float: left;
+			margin: 0 10px 0 0;
+		}
